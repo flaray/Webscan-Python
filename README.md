@@ -1,7 +1,12 @@
 Simple Webscan Python script
+
+
 0x00:
 这是一个基本上最简单的Python目录扫描脚本；用的是御剑的字典，用来练习的简单脚本。所以需要自己找御剑的字典。
+
+
 0x01:源代码
+
 
 import requests
 import queue
@@ -137,10 +142,3 @@ Usage:python dirscan.py -u http://zone.secevery.com
 	else:
 		print('\033[1;32m'+ usage +'\033[0m')
 		parser.print_help()
-
-
-
-
-
-
-
