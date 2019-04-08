@@ -9,13 +9,18 @@ Simple Webscan Python script
 
 
 import requests
-import queue
-import sys
-import os
-import threading
-from optparse import OptionParser
-from time import time
 
+import queue
+
+import sys
+
+import os
+
+import threading
+
+from optparse import OptionParser
+
+from time import time
 
 headers = {
 	'User-Agent':'',
@@ -101,7 +106,7 @@ class Dscanner(object):
 		except KeyboardInterrupt:
 			print(self.R + u'\n[-] 用户终止扫描...' + self.W)
 			sys.exit(1)
-
+			
 if __name__ == '__main__':
 	logo=''' 
 		welcome to WEBscan
@@ -116,9 +121,8 @@ If the number of threads is not specified, the default is 10.
 Usage:python dirscan.py -u http://zone.secevery.com
       python dirscan.py -u http://zone.secevery.com -f php 
       python dirscan.py -u http://zone.secevery.com -f php -n 100
+      
 			'''
-
-
 	parser =OptionParser()
 
 	parser.add_option("-u" ,"--url", action="store",type="string",dest="url",help="Please input target url")
